@@ -1,0 +1,60 @@
+/* -----CSS for Edie Homepage------*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+*{
+    margin: 0;
+}
+
+html{
+    font-family: 'Poppins';
+    font-size: 16px;
+}
+
+body{
+    padding:0 2.5%;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 72px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    position: fixed;
+    width: 95%;
+    background-color: #ffffff;
+}
+    .navbar h2{
+        font-size: 36px;
+    }
+    .navbar ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+.section{
+    margin:4% 0 8% 0;
+}
+    .hero_header{
+        margin:0 0 4% 16%;
+        width: 45%;
+        line-height: 64px;
+    }
+    .hero_header p{
+        color:#2D9CDB;
+    }
+    .hero_img img{
+        width: 100%;
+        border-radius: 18px;
+    }
