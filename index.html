@@ -14,16 +14,16 @@
         <nav class="navbar links">
             <h2>Edie</h2>
             <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>Our Works</li>
-                <li>Clients</li>
-                <li>Contact</li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#works">Our Works</a></li>
+                <li><a href="#clients">Clients</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
         <!--Homepage Hero Section-->
-        <div class="section">
+        <div class="section" id="hero">
             <div class="hero_header">
                 <p>Unhappy with your website?</p>
                 <h1>We create beautiful and fast web services</h1>
@@ -43,7 +43,7 @@
         </div>
 
         <!--Homepage Services Section-->
-        <div class="section">
+        <div class="section" id="services">
             <h2>We offer high demand services</h2>
             <div class="services_cards">
                 <div class="card">
@@ -67,11 +67,11 @@
             </div>
         </div>
 
-        <!--Homepage Services Section-->
-        <div class="section">
+        <!--Homepage Work Section-->
+        <div class="section" id="works">
             <h2>Good design means good business</h2>
             <div class="works">
-                <div class="grid_column1">
+                <div class="grid_column">
                     <div class="works_card">
                         <div class="works_card_img"><img src="./img/smarthome.jpg" alt="smart home"></div>
                         <p>Full stack application</p>
@@ -83,7 +83,7 @@
                         <h4>Booking system</h4>
                     </div>
                 </div>
-                <div class="grid_column2">
+                <div class="grid_column">
                     <div class="works_card">
                         <div class="works_card_img"><img src="./img/onboard.png" alt="onboard"></div>
                         <p>UX/UI design</p>
@@ -96,25 +96,29 @@
                     </div>
                 </div>
             </div>
-            <p>see more <img src="./img/arrow_right_alt_black_24dp.svg" alt="right arrow"></p>
+            <p class="see_more">see more <img src="./img/arrow_right_alt_black_24dp.svg" alt="right arrow"></p>
         </div>
 
         <!--Homepage Team Section-->
-        <div class="section">
+        <div class="section" id="team">
             <div class="team_text">
-                <h6>Meet the team</h6>
+                <p>Meet the team</p>
                 <h2>We are chilled and a laidback team</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
             </div>
             <div class="team_gallery">
-                <div class="team_img"><img src="./img/person3.png" alt="team member 1"></div>
-                <div class="team_img"><img src="./img/person1.png" alt="team member 2"></div>
+                <div class="team_column">
+                    <div class="team_img"><img src="./img/person3.png" alt="team member 1"></div>
+                </div>
+                <div class="team_column">
+                    <div class="team_img"><img src="./img/person1.png" alt="team member 2"></div>
                 <div class="team_img"><img src="./img/person2.png" alt="team member 2"></div>
+                </div>
             </div>
         </div>
 
         <!--Homepage Client Section-->
-        <div class="section">
+        <div class="section" id="clients">
             <h2>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h2>
             <div class="client_profile">
                 <div class="profile_img"><img src="./img/person4.png" alt="client profile img"></div>
@@ -126,20 +130,20 @@
         </div>
 
         <!--Homepage Contact Section-->
-        <div class="section">
-            <div>
+        <footer id="contact">
+            <div class="contact">
                 <div class="links">
                     <ul>
-                        <li>Home</li>
-                        <li>Services</li>
-                        <li>Our Works</li>
-                        <li>Clients</li>
-                        <li>Contact</li>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#works">Our Works</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="socials">
                     <h2>Edie</h2>
-                    <div>
+                    <div class="social_links">
                         <div class="socials_icon"><img src="./img/instagram.svg" alt="instagram icon"></div>
                         <div class="socials_icon"><img src="./img/linkedin.svg" alt="linkedin icon"></div>
                         <div class="socials_icon"><img src="./img/twitter.svg" alt="twitter icon"></div>
@@ -153,8 +157,8 @@
                     </form>
                 </div>
             </div>
-            <p>created by <strong><u>AshwinKumar-V</u></strong> - devChallenges.io</p>
-        </div>
+            <p>created by <strong><a href="https://devchallenges.io/portfolio/AshwinKumar-V">AshwinKumar-V</a></strong> - devChallenges.io</p>
+        </footer>
 
     </body>
 </html>

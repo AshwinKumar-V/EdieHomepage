@@ -15,8 +15,8 @@ html{
 }
 
 body{
-    padding:0 2.5%;
     color: #4F4F4F;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -35,15 +35,24 @@ h4{
     font-size: 24px;
     line-height: 36px;
 }
+h5{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+}
 p{
     font-size: 18px;
     line-height: 27px;
 }
-button:hover{
+a{
+    text-decoration: none;
+    color: #333333;
+}
+button:hover, a:hover, li:hover, .socials_icon:hover{
     cursor: pointer;
 }
 
-
+/*--------------Navbar Section----------------*/
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -53,7 +62,7 @@ button:hover{
     position: fixed;
     top:0;
     width: 95%;
-    padding: .2% 0;
+    padding: .3% 2.5%;
     background-color: #ffffff;
 }
     .navbar ul{
@@ -63,8 +72,10 @@ button:hover{
         width: 50%;
     }
 
+/*--------------Hero Section----------------*/
 .section{
-    margin:20% 8%;
+    margin:18% 8%;
+    padding:0 2.5%;
 }
     .hero_header{
         margin:0 0 4% 16%;
@@ -116,6 +127,7 @@ button:hover{
     margin: 10% 0;
 }
 
+/*--------------Services Section----------------*/
 .services_cards{
     display: flex;
     justify-content: space-between;
@@ -171,4 +183,162 @@ button:hover{
     .card:hover .card_btn{
         color: #F2F2F2;
         background-color: #2D9CDB;
+    }
+
+/*--------------Work Section----------------*/
+.works{
+    display: flex;
+    margin-top: 1%;
+}
+    .grid_column{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .works_card{
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        margin-bottom: 25%;
+    }
+    .works_card_img img{
+        border-radius: 12px;
+        width: 96%;
+    }
+    .works_card p{
+        color: #828282;
+        font-size: 14px;
+        line-height: 21px;
+        margin: 2% 0;
+    }
+    .grid_column:nth-child(1){
+        margin-top: 15%;
+    }
+    .works_card:nth-child(2){
+        margin-bottom: 0;
+    }
+    .see_more{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: #2D9CDB;
+    }
+    .see_more:hover{
+        cursor: pointer;
+    }
+    .see_more img{
+        margin-left: 1.5%;
+    }
+
+/*--------------Team Section----------------*/
+#team{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .team_text{
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+    }
+    .team_text p{
+        color: #EB5757;
+    }
+    .team_text h2{
+        width: 100%;
+        margin: 4% 0;
+    }
+    .team_text h5{
+        width: 80%;
+    }
+    .team_gallery{
+        display: flex;
+        justify-content: flex-end;
+        width: 60%;
+    }
+    .team_column{
+        margin: 0 1.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .team_img{
+        margin-bottom: 3%;
+    }
+    .team_img img{
+        border-radius: 24px;
+    }
+
+/*--------------Client Section----------------*/
+#clients h2{
+    width: 85%;
+}
+    .client_profile{
+        display: flex;
+        margin: 5% 0;
+    }
+    .profile_img{
+        width: 7%;
+        margin-right: 3%;
+    }
+    .profile_img img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    .profile_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .profile_text p{
+        color:  #828282;
+    }
+
+/*--------------Contact Section----------------*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #100E1D;
+    padding-top: 5%;
+}
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact ul{
+        list-style: none;
+        color: #ffffff;
+        line-height: 42px;
+    }
+    .socials h2{
+        color:#F2F2F2;
+    }
+    .social_links{
+        display: flex;
+    }
+    .socials_icon{
+        margin-right:10%;
+    }
+    .contact .email_form p{
+        color: #F2F2F2;
+    }
+    .contact form{
+        width: 120%;
+    }
+    .contact form button{
+        width: 30%;
+    }
+    footer p:nth-child(2){
+        color:#F2F2F2;
+        margin: 4% 0 1%;
+        text-align: center;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+    }
+    footer a{
+        color: #F2F2F2;
+    }
+    footer p a{
+        text-decoration: underline;
     }
