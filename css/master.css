@@ -48,7 +48,7 @@ a{
     text-decoration: none;
     color: #333333;
 }
-button:hover, a:hover, li:hover, .socials_icon:hover{
+button:hover, a:hover, li:hover, .socials_icon:hover, .menu_icon:hover, .close_icon{
     cursor: pointer;
 }
 
@@ -71,10 +71,34 @@ button:hover, a:hover, li:hover, .socials_icon:hover{
         justify-content: space-between;
         width: 50%;
     }
-    .menu_icon{
+/*--------------Menu Section----------------*/
+    .menu_icon, .close_icon{
+        z-index: 5;
         display: none;
         margin-right: 5%;
     }
+    .menu{
+        z-index: 3;
+        height: 100vh;
+        width: 0;
+        background-color:#100E1D;
+        color: #ffffff;
+        position:absolute;
+        right: 0;
+        top:0;
+        transition: width 500ms;
+        display: flex;
+        justify-content: space-around;
+    }
+    #menu_links{
+        display: none;
+        font-size: 3rem;
+        margin: 40% 0;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
 
 /*--------------Hero Section----------------*/
 .section{
@@ -384,7 +408,7 @@ footer{
     }
 }
 @media screen and (max-width: 510px) {
-    nav li{
+    #links{
         display: none;
     }
     .menu_icon{
